@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: rgb(131, 131, 220);
+        }
+
+        .box{
+          
+            height: 0;
+            width: 810px;
+            border: 1px solid rgba(0, 0, 0, 0.724);
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            position: absolute;
+
+        }
+
+
+        .box::after{
+            content: "";
+            height: 50px;
+            width: 600px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            position: absolute;
+            background-image: 
+            linear-gradient( rgba(255, 255, 255, 0),rgba(214, 214, 214, 0.64), rgba(255, 255, 255, 0))
+            ;
+            z-index: 2;
+
+        }
+
+
+
+        
+        .box::before{
+            content:"";
+            height: 50px; 
+            width: 700px;
+            background-image: 
+            linear-gradient( rgb(255, 255, 255),rgb(214, 214, 214), rgb(255, 255, 255))
+            ;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            position: absolute;
+            border: 1px solid black;
+            transform: translate(-50%,-50%);
+
+        }
+            .box1{
+
+            height: 120px;   
+            width: 600px;
+            border: 1px solid black;
+            top: 50%;
+            left: 50%;
+            position: absolute;
+            transform: translate(-50%,-50%);
+            background:linear-gradient(90deg,
+           white 0%, white 45%,
+            black 45%, black 55%,
+            rgb(255, 255, 155) 55%,rgb(255, 255, 155) 100%);
+            display: flex;align-items: end;
+
+        }
+        
+
+        .box1::after{
+        content: "";
+        position: absolute;
+        height: 20px;
+        width: 600px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-300%);
+        background:linear-gradient(90deg,rgba(255, 255, 0, 0) 95%,black 5%) repeat-x left top/10px 50px ;
+
+        }
+
+                
+        .box1::before{
+            content:"";
+            height: 120px; 
+            width: 60px;
+            background-image: 
+            linear-gradient( rgb(255, 255, 255),rgb(214, 214, 214), rgb(255, 255, 255))
+            ;
+            border: 1px solid black;
+            top: 50%;
+            left:-13%;
+            transform: translate(-50%,-50%);
+            position: absolute;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="box1">Made in Taiwan</div>
+    </div>
+</body>
+</html>

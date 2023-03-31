@@ -1,0 +1,182 @@
+.box{
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    border: 1px solid black;
+    background: black;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+}
+.face1{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: red;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(120%,-50%);
+    z-index: 1;
+}
+.face2{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: red;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-220%,-50%);
+    z-index: 1;
+}
+.eyes1{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: rgb(255, 255, 255);
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-150%,-150%);
+    z-index: 1;
+}
+.eyes2{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: rgb(255, 255, 255);
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(50%,-150%);
+    z-index: 1;
+}
+.eyes1::after{
+    content: "";
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background:black;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+}
+.eyes2::after{
+    content: "";
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background:black;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+}
+.year1{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background:black;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(120%,-260%);
+    z-index: 2;
+}
+.year1::after{
+    content: "";
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background:white;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    z-index: 3;
+}
+.year2{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background:black;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-220%,-260%);
+    z-index: 2;
+}
+.year2::after{
+    content: "";
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background:white;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    z-index: 3;
+}
+.nod{
+    width: 280px;
+    height: 150px;
+    border-radius: 50%;
+    background:white;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-30%);
+    z-index: 3;
+}
+.nod::after{
+    content: "";
+    width: 50px;
+    height: 30px;
+    border-radius: 50%;
+    background:rgb(0, 0, 0);
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-150%);
+    z-index: 3;
+}
+.nod::before{
+    content: "";
+    width: 150px;
+    height: 50px;
+    border-radius: 50%;
+    background:rgb(0, 0, 0);
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,10%);
+    z-index: 3;
+}
+.v{
+    height: 110px;
+    width: 50px;
+    top: 75%;
+    left: 35%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    background: white;
+    z-index: 4;
+    transform: skew(45deg,0);
+}
+.v2{
+    height: 110px;
+    width: 50px;
+    top: 75%;
+    left: 55%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    background: rgb(255, 255, 255);
+    z-index: 4;
+    transform: skew(-45deg,0);
+}
